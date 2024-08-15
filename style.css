@@ -63,7 +63,7 @@ main {
     text-align: center;
 }
 
-.content, .categories {
+.content, aside {
     display: inline-block;
 }
 
@@ -71,19 +71,19 @@ main {
     padding: 30px;   
 }
 
-.categories {
+aside {
     width: 30%;
     background-color: #333;
     height: 100%;
     float: right;
 }
 
-.categories h2 {
+aside h2 {
     color: #fff;
     padding: 30px;
 }
 
-.categories li {
+aside li {
     padding: 15px;
     color: aqua;
 }
