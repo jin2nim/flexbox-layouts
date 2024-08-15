@@ -19,6 +19,7 @@ nav {
 picture img {
     max-height: 48px;
     vertical-align: middle;
+    background-color: #fff;
 }
 
 .spacer {
