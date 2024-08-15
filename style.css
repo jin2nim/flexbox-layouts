@@ -16,7 +16,7 @@ nav {
     background-color: #000;
 }
 
-picture>img {
+picture img {
     max-height: 48px;
     vertical-align: middle;
 }
