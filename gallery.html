@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style.css">
-    <title>basic-navigation-example</title>
+    <title>flexbox-layouts</title>
 </head>
 <body>
     <nav>
@@ -23,53 +23,53 @@
                 <img src="./logo/ECO_logo_small.jpg" alt="ECO company logo">
             </picture>
         </a>
-        <!-- <picture>
-            <a href="./index.html">
-                <img src="./logo/ECO_logo_small.jpg" alt="ECO company logo">
-            </a>
-        </picture> -->
-        <span class="spacer"></span>
+        
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#" class="active">About</a></li>
+            <li><a href="index.html">Flex box</a></li>
             <li class="drop-down-wrap">
-                <a href="./services.html">Services</a>
+                with Float
                 <ul class="drop-down">
-                    <li><a href="#">Gardening</a></li>
-                    <li><a href="#">Landscaping</a></li>
-                    <li><a href="#">Weed Control</a></li>
-                    <li class="last-item"><a href="#">Tree Removal</a></li>
+                    <li><a href="./float-left.html">Float Left</a></li>
+                    <li><a href="./float-right.html">Float Right</a></li>
                 </ul>
             </li>
-            <li class="last-item"><a href="./contact.html">Contact</a></li>
+            <li><a href="./layout.html">Layout</a></li>
+            <li><a href="./gallery.html" class="active">Gallery</a></li>
         </ul>
     </nav>
 
     <header>
         <h1>
-            About Page
+            Flexbox Gallery
         </h1>
     </header>
     <main>
-        <section>
-            <h2>Section Area</h2>
-        </section>
-        <article>
-            <h2>Content Area</h2>
-            <p>write down blabla</p>
-        </article>
+        <div class="gallery-wrap">
+            <div class="flex-column">
+                <h2>Flex-direction:column</h2>
+                <h2>Flex-direction:column</h2>
+                <h2>Flex-direction:column</h2>
+                <h2>Flex-direction:column</h2>
+                <h2>Flex-direction:column</h2>
+            </div>
+            <article class="gallery">
+                <img src="./img/slide1.jpg" alt="image1">
+                <img src="./img/slide2.jpg" alt="image2">
+                <img src="./img/slide3.jpg" alt="image3">
+                <img src="./img/slide4.jpg" alt="image4">
+                <img src="./img/slide5.jpg" alt="image5">
+                <img src="./img/slide6.jpg" alt="image6">
+                <img src="./img/slide7.jpg" alt="image7">
+            </article>
+        </div>
     </main>
-
-    <a href="#" class="upto">
-        TOP
-    </a>
 
     <footer>
         <ul>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Terms</a></li>
             <li><a href="#">Privacy</a></li>
-            <li class="last-item"><a href="#">Cookies</a></li>
+            <li><a href="#">Cookies</a></li>
         </ul>
         <hr/>
         <p>

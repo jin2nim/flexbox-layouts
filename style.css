@@ -17,6 +17,9 @@ nav {
     position: sticky;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 picture img {
@@ -25,27 +28,15 @@ picture img {
     background-color: #fff;
 }
 
-.spacer {
-    display: inline-block;
-    /* Parent width - Logo width - Menu <ul> width */
-    width: calc(100% - 132px - 276px);
-}
 
 nav ul {
-    display: inline-block;
+    display: flex;
+    gap: 20px;
     vertical-align: middle;
 }
 
-nav>ul>li {
-    display: inline-block;
-    margin-right: 15px;
-}
 
-.last-item {
-    margin: 0 !important;
-}
-
-nav li a {
+nav li, nav li a {
     color: #fff;
 }
 
@@ -76,10 +67,11 @@ nav li a:hover {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, transform 0.15s;
+    display: flex;
+    flex-direction: column;
 }
 
 .drop-down li {
-    margin-bottom: 10px;
     white-space: nowrap;
 }
 
@@ -103,31 +95,80 @@ header {
 
 
 main {
-    height: 100vh;
-    min-height: 800px;
-    text-align: center;
-    padding-top: 50px;
+    padding: 50px;
+    overflow: hidden;
 }
 
-
-/* TOP button */
-.upto {
-    position: sticky;
-    display: inline-block;
+.float-right {
     float: right;
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    border-radius: 100%;
-    line-height: 40px;
-    text-align: center;
-    color: white;
-    bottom: 40px;
-    right: 40px;
-    font-size: small;    
+    display: block;
+    width: 30%;
+    padding: 0 0 20px 20px;
+    box-sizing: border-box;
 }
 
+.float-left {
+    float: left;
+    display: block;
+    width: 30%;
+    padding: 0 20px 20px 0;
+    box-sizing: border-box;
+}
 
+section p {
+    margin-top: 30px;
+}
+
+.flex-wrap {
+    width: 100%;
+    display: flex;
+    gap: 4%;
+    flex-wrap: wrap;
+}
+.flex-column {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    /* white-space: nowrap; */
+    flex: 1 1 auto;
+    background-color: #ccc;
+}
+
+.gallery-wrap {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1 1 1000px;
+}
+
+.gallery img {
+    width: 300px;
+}
+
+.width50, .width100 {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    /* flex-grow: 0; */
+    /* flex-shrink: 0; */
+}
+
+.width50 {
+    width: 48%;
+    background-color: yellow;
+    margin-bottom: 30px;
+}
+
+.width100 {
+    width: 100%;
+    background-color: aqua;
+}
 
 /* footer */
 
@@ -138,9 +179,10 @@ footer {
     padding: 15px;
 }
 
-footer li {
-    display: inline-block;
-    margin-right: 15px;
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 footer hr {
